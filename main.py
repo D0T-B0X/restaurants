@@ -36,9 +36,6 @@ def add_cafe():
             writer = csv.writer(file)
             writer.writerow([form.cafe.data, form.cafe_loc.data, form.opening_time.data, form.closing_time.data, form.coffee_rating.data, form.wifi.data, form.power.data])
         print("True")
-    # Exercise:
-    # Make the form write a new row into cafe-data.csv
-    # with   if form.validate_on_submit()
     return render_template('add.html', form=form)
 
 
